@@ -425,3 +425,14 @@ background-color: #eeeeee;
 <?php
 }
 ?>
+<?php
+// Git commit message: "Add stock details feature implementation"
+// This section handles the addition of new stock details to the database.
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $stockDetails = $_POST['stock_details'];
+    // ...existing code...
+    // Insert stock details into the database
+    $query = "INSERT INTO stock (details) VALUES ('$stockDetails')";
+    // ...existing code...
+}
+?>
