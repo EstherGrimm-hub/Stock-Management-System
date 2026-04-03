@@ -23,7 +23,7 @@ body {
 padding: 0px;
 margin: 0px;
 }
-.style2 {color: #000000}
+.style2 {color: #2d2d2d}
 
 #loginContainer {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
