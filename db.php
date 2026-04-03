@@ -3,9 +3,9 @@
 include("db.class.php");
 
 // Open the base (construct the object):
-$base="tock";
+$base="stock";
 $server="localhost";
-$user="rot";
+$user="root";
 $pass="";
 $db = new DB($base, $server, $user, $pass);
 /*
