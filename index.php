@@ -3,10 +3,11 @@
 <html>
 <head>
 <title>Welcome to Stock Management System !</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="login.css" />
 <script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="test_change.js"></script> <!-- Added for new UI feature -->
 
 <style type="text/css">
 <!--
@@ -23,6 +24,58 @@ padding: 0px;
 margin: 0px;
 }
 .style2 {color: #000000}
+
+#loginContainer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#loginHeader h1 {
+    color: #fff;
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#loginContent {
+    width: 100%;
+}
+
+#loginContent td {
+    padding: 10px 0;
+}
+
+.tdLabel {
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 -->
 </style>
