@@ -14,7 +14,7 @@ else
 <html>
 <head>
 <title>Welcome to Stock Management System !</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 		<link rel="stylesheet" href="css/template.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 		<script src="js/jquery.min.js" type="text/javascript"></script>
@@ -47,17 +47,20 @@ $().ready(function() {
 	$("#singleBirdRemote").autocomplete("category.php", {
 		width: 160,
 		autoFill: true,
-		selectFirst: false
+		selectFirst: false,
+		cacheLength: 100
 	});
 	$("#supplier").autocomplete("supplier1.php", {
 		width: 160,
 		autoFill: true,
-		selectFirst: false
+		selectFirst: false,
+		cacheLength: 100
 	});
 	$("#uom").autocomplete("uom.php", {
 		width: 160,
 		autoFill: true,
-		selectFirst: false
+		selectFirst: false,
+		cacheLength: 100
 	});
 
 
@@ -499,11 +502,11 @@ $SQL = "SELECT * FROM  transactions";
 
 		if ($page > 1) 
 
-			$pagination.= "<a href=\"$targetpage?page=$prev&limit=$limit\">« previous</a>";
+			$pagination.= "<a href=\"$targetpage?page=$prev&limit=$limit\">ï¿½ previous</a>";
 
 		else
 
-			$pagination.= "<span class=\"disabled\">« previous</span>";	
+			$pagination.= "<span class=\"disabled\">ï¿½ previous</span>";	
 
 		
 
@@ -631,11 +634,11 @@ $SQL = "SELECT * FROM  transactions";
 
 		if ($page < $counter - 1) 
 
-			$pagination.= "<a href=\"$targetpage?page=$next&limit=$limit\">next »</a>";
+			$pagination.= "<a href=\"$targetpage?page=$next&limit=$limit\">next ï¿½</a>";
 
 		else
 
-			$pagination.= "<span class=\"disabled\">next »</span>";
+			$pagination.= "<span class=\"disabled\">next ï¿½</span>";
 
 		$pagination.= "</div>\n";		
 

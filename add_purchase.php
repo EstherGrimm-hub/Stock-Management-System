@@ -13,7 +13,7 @@ else
 <html>
 <head>
 <title>Welcome to Stock Management System !</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <META Http-Equiv="Cache-Control" Content="no-cache">
 <META Http-Equiv="Pragma" Content="no-cache">
 <META Http-Equiv="Expires" Content="0"> 
@@ -59,7 +59,8 @@ $().ready(function() {
 	$("#supplier").autocomplete("supplier1.php", {
 		width: 160,
 		autoFill: true,
-		selectFirst: false
+		selectFirst: false,
+		cacheLength: 100
 	});
 	
 
@@ -95,7 +96,8 @@ $().ready(function() {
 		width: 160,
 		autoFill: true,
 		mustMatch: true,
-		selectFirst: false
+		selectFirst: false,
+		cacheLength: 100
 	});
 	
 	
