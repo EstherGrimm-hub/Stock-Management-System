@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="login.css" />
 <script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="test_change.js"></script> <!-- Added for new UI feature -->
 
 <style type="text/css">
 <!--
